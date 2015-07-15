@@ -1,0 +1,95 @@
+@CHARSET "UTF-8";
+		body,div,h1,h1,h3,h4,p,a,ul,li,hr{
+			margin: 0px;
+			padding: 0px;
+		}
+	    ul{
+	    	 padding-left:18px;
+	    }
+	    li{
+	    	list-style: none;
+	    	line-height: 23px;
+	    }
+	    a{
+	    	text-decoration: none;
+	    }
+	    #content{
+	    	clear: both;
+	    	width: 100%;
+	    	height: 100%;
+	    }
+	    #category{
+	    	float: left;
+	    	width:19%;
+	    	border-right: 1px groove;
+	    	height:100%;
+	    	color: #473e25;
+	    	background-color: #f5f5f5;
+	    }
+	    #ctitle{
+	    	 text-align:center;
+	    	 height:25px;
+	    	 line-height:25px;
+	    	 background-color:#F58C0C;
+	    }
+	    #category #ctitle a{
+	    	color: #FEFBFB;
+	    }
+	    #category #ctitle a:HOVER{
+	    	color: black;
+    		border-bottom: thin solid black;
+	    }
+	    #category ul{
+	    	padding-left: 30px;
+	    }
+	    #category li{
+	    	line-height: 33px;
+	    }
+	    #category a{
+    		color: #473e25;
+    	}
+    	#category a:HOVER{
+    		color: #FF4001;
+    		border-bottom: thin solid #FF4001;
+    	}
+	    #bookandpagenum{
+	    	float: left;
+	    	width:79%;
+	    }
+	    #books{
+	    	clear: both;
+	    	padding-top:23px;
+	    	height: 82%;
+	    }
+	    #book{
+	    	clear: both;
+	    	margin-left:40px;
+	    	height: 33%;
+	    }
+	    #bookimage{
+	    	float: left;
+	    }
+	    #bookinfo{
+	    	float: left;
+	    }
+	    #bookinfo a{
+	    	color: #C40000;
+	    }
+	    #bookinfo a:HOVER{
+    		border-bottom: thin solid #C40000;
+	    }
+	    #pagenum{
+	    	color: #777766;
+	    	clear: both;
+	    	height: 30px;
+	    	line-height: 30px;
+	    	text-align: center;
+	    	background-color: #EFEFEF;
+	    }
+	    #pageNum a{
+    		color: #273fb2;
+    		
+    	}
+    	#pageNum a:HOVER{
+			border-bottom: thin solid #3C66B2;
+    	}

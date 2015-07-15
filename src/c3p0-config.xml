@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+public class JdbcUtils {
+
+	private static DataSource ds = null;
+	
+	static{
+		ds = new ComboPooledDataSource("mysql");
+	}
+	
+	public static DataSource getDataSource() {
+		return ds;
+	}
+		
+	public static Connection getConnection() throws SQLException{
+		return ds.getConnection();
+	}
+	
+}
+-->
+
+<c3p0-config>
+
+	<!-- 缺省配置 -->
+	<default-config>
+		<property name="driverClass">com.mysql.jdbc.Driver</property>
+		<property name="jdbcUrl">
+			<![CDATA[
+				jdbc:mysql://localhost:3306/bookstore?useUnicode=true&characterEncoding=UTF8&useServerPrepStmts=true&prepStmtCacheSqlLimit=256&cachePrepStmts=true&prepStmtCacheSize=256&rewriteBatchedStatements=true
+			]]>
+		</property>
+		<property name="user">root</property>
+		<property name="password">root</property>
+		
+		<property name="acquireIncrement">5</property>
+		<property name="initialPoolSize">5</property>
+		<property name="minPoolSize">5</property>
+		<property name="maxPoolSize">10</property>
+	</default-config>
+	
+	
+	<!-- 命名配置:mysql -->
+	<named-config name="mysql">
+		<property name="driverClass">com.mysql.jdbc.Driver</property>
+		<property name="jdbcUrl">jdbc:mysql://localhost:3306/bookstore?useUnicode=true&amp;characterEncoding=UTF-8</property>
+		<property name="user">root</property>
+		<property name="password">root</property>
+
+		<!-- 连接不够用的时候，一次向数据库要3个连接 -->
+		<property name="acquireIncrement">5</property>
+		<property name="initialPoolSize">5</property>
+		<property name="minPoolSize">5</property>
+		<property name="maxPoolSize">10</property>
+	</named-config>
+	
+	
+	<!-- 命名配置:oracle -->
+	<named-config name="oracle">
+		<property name="driverClass">com.mysql.jdbc.Driver</property>
+		<property name="jdbcUrl">jdbc:mysql://localhost:3306/bookstore?useUnicode=true&amp;characterEncoding=UTF-8</property>
+		<property name="user">root</property>
+		<property name="password">root</property>
+		
+		<property name="acquireIncrement">5</property>
+		<property name="initialPoolSize">5</property>
+		<property name="minPoolSize">5</property>
+		<property name="maxPoolSize">10</property>
+	</named-config>
+	
+</c3p0-config>
+	
+
